@@ -601,7 +601,7 @@ export default function App() {
   const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Nova-Store">
       <div className="app-shell">
         <Header cartCount={cartCount} />
         <Routes>
