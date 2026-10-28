@@ -630,6 +630,6 @@ export default function App() {
           <span>© 2026 NOVA STORE · STUDENT PROJECT</span>
         </footer>
       </div>
-    <BrowserRouter basename="/Nova-Store">
+    </BrowserRouter>
   );
 }
