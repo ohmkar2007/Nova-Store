@@ -3,7 +3,8 @@ name: Deploy NOVA Store to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
@@ -34,9 +35,8 @@ jobs:
       - name: Build website
         run: npm run build
 
-           - name: Create SPA fallback
+      - name: Create SPA fallback
         run: cp dist/index.html dist/404.html
-
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
